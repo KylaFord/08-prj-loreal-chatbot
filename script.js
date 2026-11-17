@@ -9,6 +9,9 @@ chatWindow.textContent = "👋 Hello! How can I help you today?";
 const workerUrl = "https://old-dream-4f50.1kylaford.workers.dev/";
 
 /* Handle form submit */
+function askFieldGuide() {
+let question = questionInput.value  // put your code here
+}
 chatForm.addEventListener("submit", async (e) => {
   e.preventDefault();
 
