@@ -1,6 +1,6 @@
 /* DOM elements */
 const chatForm = document.getElementById("chatForm");
-const userInput = document.getElementById("userInput");
+const usrInput = document.getElementById("userInput");
 const chatWindow = document.getElementById("chatWindow");
 
 // Set initial message
@@ -29,6 +29,7 @@ chatForm.addEventListener("submit", async (e) => {
 
     // Display the assistant's reply.
     const data = await response.json();
+    console.log(data);
     chatWindow.textContent = data.choices[0].message.content;
   } catch (error) {
     console.error("Error:", error);
